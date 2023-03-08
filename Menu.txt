@@ -1,0 +1,13 @@
+Önce Bir Pizza Tabanı Seçiniz:
+    [1] Klasik          [Fiyat: ₺120]
+    [2] Margarita       [Fiyat: ₺130]
+    [3] Türk Pizza      [Fiyat: ₺135]
+    [4] Sade Pizza      [Fiyat: ₺100]
+Seçeceğiniz Sos:
+    [11] Zeytin         [Fiyat: ₺10]
+    [12] Mantarlar      [Fiyat: ₺14]
+    [13] Keçi Peyniri   [Fiyat: ₺16]
+    [14] Et             [Fiyat: ₺22]
+    [15] Soğan          [Fiyat: ₺11]
+    [16] Mısır          [Fiyat: ₺10]
+Teşekkür Ederiz!
