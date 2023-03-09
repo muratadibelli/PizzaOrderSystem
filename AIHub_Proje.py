@@ -1,7 +1,7 @@
 import csv
 from datetime import *
 import time
-#Sınıfları Tanımlayalım.
+# Sınıfları tanımlayalım.
 class Pizza:
     def __init__(self, description, price):
         self._description = description
@@ -95,7 +95,7 @@ global pizza
 global sos
 
 while True:
-    # Kullanıcıdan pizza seçimini iste
+    # Kullanıcıdan pizza seçimini isteyelim.
     pizza_choice = input("Lütfen Pizza Tabanı Seçimi Yapınız: ")
 
     if pizza_choice == "1":
@@ -115,7 +115,7 @@ while True:
         continue
 
 time.sleep(0.4)
-# Kullanıcıdan sos seçimini iste
+# Kullanıcıdan sos seçimini isteyelim.
 while True:
     sos_choice = input("Lütfen Bir Sos Seçimi Yapınız: ")
 
@@ -140,7 +140,7 @@ while True:
     else:
         print("Geçersiz bir sos seçimi yaptınız.")
         continue
-
+# Sipariş Özeti
 time.sleep(0.4)
 print("---------------------------------------------------")
 print(f"Sipariş Özeti: {sos.get_description()}")
@@ -149,7 +149,7 @@ time.sleep(0.4)
 # Toplam fiyatı hesapla ve ekrana yazdır
 print(f"Toplam fiyat: ₺{total_price}")
 print("---------------------------------------------------")
-
+# Kullanıcı bilgileri.
 def get_user_info():
     while True:
         name = input("İsim: ")
