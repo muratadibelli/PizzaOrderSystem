@@ -98,7 +98,6 @@ while True:
     # Kullanıcıdan pizza seçimini iste
     pizza_choice = input("Lütfen Pizza Tabanı Seçimi Yapınız: ")
 
-    # Seçilen pizzanın fiyatını hesapla
     if pizza_choice == "1":
         pizza = ClassicPizza()
         break
@@ -120,7 +119,6 @@ time.sleep(0.4)
 while True:
     sos_choice = input("Lütfen Bir Sos Seçimi Yapınız: ")
 
-    # Seçilen sosun fiyatını hesapla
     if sos_choice == "11":
         sos = Zeytin(pizza)
         break
@@ -146,7 +144,6 @@ while True:
 time.sleep(0.4)
 print("---------------------------------------------------")
 print(f"Sipariş Özeti: {sos.get_description()}")
-# Pizzanın fiyatını ve seçilen sosun fiyatını topla
 total_price = sos.get_cost()
 time.sleep(0.4)
 # Toplam fiyatı hesapla ve ekrana yazdır
