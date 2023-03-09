@@ -1,8 +1,7 @@
 import csv
 from datetime import *
 import time
-
-
+#Sınıfları Tanımlayalım.
 class Pizza:
     def __init__(self, description, price):
         self._description = description
@@ -19,22 +18,19 @@ class ClassicPizza(Pizza):
     def __init__(self):
         super().__init__("Klasik Pizza", 120.0)
 
-
 class MargheritaPizza(Pizza):
     def __init__(self):
         super().__init__("Margarita Pizza", 130.0)
-
 
 class TurkishPizza(Pizza):
     def __init__(self):
         super().__init__("Türk Pizza", 135.0)
 
-
 class SadePizza(Pizza):
     def __init__(self):
         super().__init__("Sade Pizza", 100.0)
 
-
+        
 # Decorator sınıfı
 class Decorator(Pizza):
     def __init__(self, component):
@@ -68,13 +64,11 @@ class KeciPeyniri(Decorator):
         self._description = "ve Keçi Peyniri"
         self._price = 16.0
 
-
 class Et(Decorator):
     def __init__(self, pizza):
         super().__init__(pizza)
         self._description = "ve Et"
         self._price = 22.0
-
 
 class Sogan(Decorator):
     def __init__(self, pizza):
@@ -82,30 +76,23 @@ class Sogan(Decorator):
         self._description = "ve Soğan"
         self._price = 11.0
 
-
 class Misir(Decorator):
     def __init__(self, pizza):
         super().__init__(pizza)
         self._description = "ve Mısır"
         self._price= 10.0
 
-
 def print_menu():
     with open('Menu.txt', 'r', encoding='utf-8') as menu_file:
         menu = menu_file.read()
     print(menu)
 
-
 print("""\tMerhaba! Pizza Sipariş Sistemine Hoş Geldiniz. Menü Aşağıda Sunulmuştur.
 -------------------------------------------------------------------------------""")
-
 time.sleep(0.4)
-
 print_menu()
 global pizza
 global sos
-
-
 
 while True:
     # Kullanıcıdan pizza seçimini iste
